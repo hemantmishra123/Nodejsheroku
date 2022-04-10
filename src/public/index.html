@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Frontend</title>
+    <style>
+    th, td {
+  padding: 15px;
+   }
+  .bg-nav {
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+ .hovereffect button {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 9px;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: translatey(-100px);
+    -ms-transform: translatey(-100px);
+    transform: translatey(-100px);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 16px;
+  }
+
+
+
+   </style>
+     
+  </head>
+  <body class=" ">
+
+    <h1>Employees Record </h1>
+
+    <button id="getProducts">
+      Get Employess Record
+    </button>
+
+    <form id="productForm">
+      <input placeholder="Employee_Name" type="text" id="newProduct">
+      <input placeholder="Employee_skill" type="text" id="name">
+      <input placeholder="Employee_id" type="text" id="empno">
+      <button type="submit">Create Employees</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Employee_Name</th>
+          <th>Skills</th>
+
+          <th>Employee_id</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!--App -->
+    <script src="app.js"></script>
+
+</body>
+</html>
